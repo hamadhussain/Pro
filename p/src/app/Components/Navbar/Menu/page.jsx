@@ -20,7 +20,7 @@ const Page = () => {
     { name: "Contact ", link: "test3" },
   ];
   return (
-    <div className=" flex gap-9">
+    <div className=" sm:flex gap-9 hidden ">
          {navlist.map((i, k) => {
                 return (
                   <div key={k} className=" flex items-center">

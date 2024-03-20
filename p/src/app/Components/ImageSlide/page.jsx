@@ -23,7 +23,7 @@ const AutoImageSlider = () => {
   }, [images.length, interval]);
 
   return (
-    <div ref={sliderRef} className=" h-screen overflow-hidden">
+    <div ref={sliderRef} className=" overflow-hidden">
       {images.map((image, index) => (
         <img
           key={index}

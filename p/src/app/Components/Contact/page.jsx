@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import Image from "next/image";
 
@@ -25,8 +26,8 @@ const Page = () => {
   return (
     <div name="test3" className=" h-screen flex  justify-center items-center grad ">
       <div className="c">
-          <Card className="w-[350px] opacity-100">
-            <CardHeader className="d">
+          <Card className="w-[300px] sm:border-b-gray-900 opacity-100">
+            <CardHeader className="">
               <CardTitle className="opacity-1">Contact Us</CardTitle>
               <CardDescription className="capitalize">
                 To Connect your Mind with us.
@@ -40,7 +41,7 @@ const Page = () => {
                     <Input id="name" placeholder="Enter Name" />
                   </div>
                   <div className="flex flex-col space-y-1.5">
-                    <Label htmlFor="name">Name</Label>
+                    <Label htmlFor="name">Message</Label>
                     <Input id="name" placeholder="Give Your Message Here" />
                   </div>
                 </div>

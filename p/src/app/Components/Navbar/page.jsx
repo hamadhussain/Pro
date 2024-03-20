@@ -5,10 +5,10 @@ import Menu from './Menu/page'
 const Page = () => {
   return (
     <div className="  flex p-6  justify-between">
-      <div className=" flex items-center gap-3">
+      <div className=" flex items-center gap-3 sm:justify-center">
       <AiFillGitlab className=" text-2xl"/>
 
-        <span className=" uppercase logo">Meta-Market</span> 
+        <span className=" uppercase logo ">Meta-Market</span> 
       </div>
       <div>
          <Menu/>

@@ -20,17 +20,17 @@ const Page = () => {
   return (
     <div
       name="test2"
-      className=" py-10 max-h-full  flex flex-col justify-center items-center"
+      className=" py-10 max-h-full  flex flex-col justify-center items-center bg-gray-100 sm:bg-white"
     >
-      <h1 className="h1 flex items-center">Projects <AiOutlineFundProjectionScreen /></h1>
-      <div className=" grid grid-cols-2 gap-4">
+      <h1 className=" flex items-center text-3xl py-2">Projects <AiOutlineFundProjectionScreen /></h1>
+      <div className=" lg:grid lg:grid-cols-2 gap-4 lg:px-4">
         {grad.map((i, k) => {
           return (
             <>
-              <div className="  rounded-lg shadow-lg overflow-hidden">
-                <div key={k} className="bg-gray-100 py-16 flex px-6 ">
+              <div key={k} className="  rounded-lg shadow-lg overflow-hidden">
+                <div  className="bg-gray-100 py-16 justify-center sm:flex px-6 ">
                   <Image src={i.image} alt="image" height={100} width={300} />
-                  <div className="text-center px-4">
+                  <div className="text-start sm:px-4">
                     {" "}
                     <h3 className="text-lg font-medium text-gray-900">
                       {i.Title}
